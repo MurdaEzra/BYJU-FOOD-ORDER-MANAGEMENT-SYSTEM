@@ -44,9 +44,9 @@ int main() {
     int choice;
     int menuViewed = 0; // Flag to track if the menu has been viewed
 
-    printf("=== Welcome to BYJU'S Food Order System ===\n");
+    printf(" Welcome to BYJU'S Food Order System \n");
     do {
-        printf("\n==================== SELECTION MENU ====================\n");
+        printf("SELECTION MENU \n");
         if (!menuViewed) {
             printf("1. View Menu\n");
         }
@@ -54,7 +54,7 @@ int main() {
         printf("3. View Cart\n");
         printf("4. Checkout\n");
         printf("5. Exit\n");
-        printf("========================================================\n");
+        printf("\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -92,11 +92,11 @@ int main() {
 
 // Function to display menu
 void showMenu() {
-    printf("\n==================== FOOD MENU ====================\n");
+    printf("FOOD MENU\n");
     for (int i = 0; i < menuSize; i++) {
         printf("%d. %s - Ksh %.2f\n", menu[i].id, menu[i].name, menu[i].price);
     }
-    printf("==================================================\n");
+    printf("\n");
 }
 
 // Function to add item(s) to cart
@@ -144,7 +144,7 @@ void viewCart() {
         return;
     }
 
-    printf("\n==================== YOUR CART ====================\n");
+    printf(" YOUR CART \n");
     float total = 0;
     for (int i = 0; i < cartSize; i++) {
         float itemTotal = cart[i].item.price * cart[i].quantity;
@@ -152,7 +152,7 @@ void viewCart() {
         total += itemTotal;
     }
     printf("Total: Ksh %.2f\n", total);
-    printf("===================================================\n");
+    printf("\n");
 }
 
 // Function to handle checkout and payment options
@@ -169,13 +169,13 @@ void checkout() {
     // Select payment method
     int paymentChoice;
     do {
-        printf("\n==================== PAYMENT OPTIONS ====================\n");
+        printf("PAYMENT OPTIONS\n");
         printf("1. Mpesa\n");
         printf("2. PayPal\n");
         printf("3. Cash on Delivery\n");
         printf("4. Credit/Debit Card\n");
         printf("5. Go Back\n");
-        printf("=========================================================\n");
+        printf("\n");
         printf("Enter your choice: ");
         scanf("%d", &paymentChoice);
 
