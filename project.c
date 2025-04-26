@@ -3,7 +3,7 @@
 #include <string.h>
 #define MAX_ITEMS 50
 
-// Structure to define a food item
+
 typedef struct {
     int id;
     char name[30];
