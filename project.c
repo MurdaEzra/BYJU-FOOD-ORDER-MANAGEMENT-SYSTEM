@@ -16,7 +16,7 @@ typedef struct {
     int quantity;
 } OrderItem;
 
-// Menu items
+// this is Menu items
 MenuItem menu[] = {
     {1, "Burger", 150.0},
     {2, "Pizza", 300.0},
@@ -42,7 +42,7 @@ float calculateTotal();
 
 int main() {
     int choice;
-    int menuViewed = 0; // Flag to track if the menu has been viewed
+    int menuViewed = 0; // Flagging to track if the menu has been viewed
 
     printf(" Welcome to BYJU'S Food Order System \n");
     do {
@@ -67,7 +67,7 @@ int main() {
             case 1:
                 if (!menuViewed) {
                     showMenu();
-                    menuViewed = 1; // Mark menu as viewed
+                    menuViewed = 1; // mark menu as viewed
                 }
                 break;
             case 2:
